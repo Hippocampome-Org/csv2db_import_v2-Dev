@@ -6,7 +6,7 @@ mkdir mysqldump
 mysql_user=root
 mysql_password=newpassword
 mysql_db_name=HC
-# add username, password, and database name above
+# add the  username, password, and database name details in the above as they are just placeholders
 
 mysql -u $mysql_user -p$mysql_password $mysql_db_name < insert_hit_counter_ids.sql
 mysqldump -u $mysql_user -p$mysql_password $mysql_db_name > ./mysqldump/HC_$today.sql
